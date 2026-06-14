@@ -5,15 +5,17 @@ class Jugaadlang < Formula
   sha256 "935dcaa0cd0edfe270ac6cceb3db80e5ba6f4725c6dc9f898e045a45cb5cd25c"
   license "MIT"
 
-  depends_on "rust" => :build
   depends_on "python@3.12"
 
   def install
+    # Remove 'publish' from dependencies since it's a dev tool and causes linkage issues
+    inreplace "pyproject.toml", /"publish>=.*",?/, ""
+
     # Create a virtual environment in libexec
     system "python3.12", "-m", "venv", libexec
 
     # Install the package and its dependencies via pip
-    system libexec/"bin/pip", "install", "-v", "--ignore-installed", "--no-binary", "nh3", buildpath
+    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
 
     # Symlink the executable into bin
     bin.install_symlink libexec/"bin/jug"
