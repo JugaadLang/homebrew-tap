@@ -6,13 +6,14 @@ class Jugaadlang < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "rust" => :build
 
   def install
     # Create a virtual environment in libexec
     system "python3.12", "-m", "venv", libexec
 
     # Install the package and its dependencies via pip
-    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
+    system libexec/"bin/pip", "install", "-v", "--ignore-installed", "--no-binary", "nh3", buildpath
 
     # Symlink the executable into bin
     bin.install_symlink libexec/"bin/jug"
