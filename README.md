@@ -1,18 +1,32 @@
-# JugaadLang Tap
+# 🍺 JugaadLang Homebrew Tap
 
-## How do I install these formulae?
+This repository contains the official Homebrew tap for **JugaadLang** 🇮🇳 — the modern programming language featuring Roman-Hindi keywords.
 
-`brew install jugaadlang/tap/<formula>`
+## Installation 🚀
 
-Or `brew tap jugaadlang/tap` and then `brew install <formula>`.
+You can install JugaadLang via Homebrew on macOS and Linux by running:
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "jugaadlang/tap"
-brew "<formula>"
+```bash
+brew tap jugaadlang/tap
+brew install jugaadlang
 ```
 
-## Documentation
+Verify your installation:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+jug --version
+```
+
+## How to use 📖
+
+Start the interactive REPL:
+```bash
+jug repl
+```
+
+Or run a JugaadLang script:
+```bash
+jug run program.jug
+```
+
+For more documentation, visit the [JugaadLang Website](https://jugaadlang.netlify.app).
