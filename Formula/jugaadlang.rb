@@ -5,8 +5,8 @@ class Jugaadlang < Formula
   sha256 "935dcaa0cd0edfe270ac6cceb3db80e5ba6f4725c6dc9f898e045a45cb5cd25c"
   license "MIT"
 
-  depends_on "python@3.12"
   depends_on "rust" => :build
+  depends_on "python@3.12"
 
   def install
     # Create a virtual environment in libexec
