@@ -1,5 +1,5 @@
 class Jugaadlang < Formula
-  desc "A Hindi-keyword programming language for Indian developers"
+  desc "Hindi-keyword programming language for Indian developers"
   homepage "https://jugaadlang.netlify.app"
   url "https://github.com/jugaadlang/jugaadlang/archive/refs/tags/v1.1.4.tar.gz"
   sha256 "0eeb6c482c46cd684b60e100880d8c5b5229bb8d8c1a901e3c32d0c94446d7e0"
