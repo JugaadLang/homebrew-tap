@@ -1,8 +1,8 @@
 class Jugaadlang < Formula
   desc "Hindi-keyword programming language for Indian developers"
   homepage "https://jugaadlang.netlify.app"
-  url "https://github.com/jugaadlang/jugaadlang/archive/refs/tags/v1.1.5.tar.gz"
-  sha256 "935dcaa0cd0edfe270ac6cceb3db80e5ba6f4725c6dc9f898e045a45cb5cd25c"
+  url "https://github.com/jugaadlang/jugaadlang/archive/refs/tags/v1.1.6.tar.gz"
+  sha256 "8358b3f429a3a407432b82f2742146813a0b7ae5d2f9b123841ae991f1ec5a92"
   license "MIT"
 
   depends_on "python@3.12"
